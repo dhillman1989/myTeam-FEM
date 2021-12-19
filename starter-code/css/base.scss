@@ -1,0 +1,249 @@
+//primary
+$MidnightGreen: rgb(1, 7, 86);
+$LightCoral: rgb(246, 126, 126);
+$White: rgb(255, 255, 255);
+//
+//
+//secondary
+$RaptureBlue: rgb(121, 200, 199);
+$PoliceBlue:rgb(44, 9, 105);
+$DeepJungleGreen: rgb(0, 64, 71);
+$SacramentoStateGreen: rgb(1, 47, 52);
+$DarkGreen: rgb(0, 37, 41);
+//
+//FONTS
+$font-primary: 'Livvic';
+//
+//
+//
+///STYLES
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: rgb(0, 64, 71);
+    color: $White;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 56px;
+}
+
+h2.small {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+a,
+a:hover,
+a:active {
+    color: $White;
+    text-decoration: none;
+}
+
+section {
+    padding-block: 5rem;
+}
+
+.text-smallest {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+//components/re-usable pieces
+.h-line {
+    width: 60px;
+    height: 2px;
+    margin-bottom: 50px;
+    &--blue {
+        background-color: $RaptureBlue;
+    }
+    &--red {
+        background-color: $LightCoral;
+    }
+}
+
+//utility classes
+.container {
+    height: 100%;
+    max-width: 95%;
+    width: 1200px;
+    margin-inline: auto;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.stretch-self {
+    align-self: stretch;
+}
+
+.padding-inline {
+    padding-inline: 1rem;
+}
+
+h1 span {
+    color: $LightCoral;
+}
+
+.cta {
+    margin-left: auto;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid $White;
+}
+
+///Content
+//NAV
+nav {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+nav .logo {
+    margin-right: 2rem;
+}
+
+nav .link {
+    margin-right: 20px;
+}
+
+//HEADER
+header {
+    margin-bottom: 6rem;
+    .container {
+        justify-content: space-between;
+    }
+    & h1 {
+        min-width: 50%;
+        max-width: 50%;
+    }
+    & p {
+        width: 450px;
+    }
+}
+
+//MANAGE
+.manage {
+    background-color: $SacramentoStateGreen;
+    .container {
+        justify-content: space-between;
+    }
+    & h2 {
+        min-width: 40%;
+        max-width: 40%;
+    }
+    & ul {
+        width: 450px;
+    }
+}
+
+//TESTIMONIALS
+.testimonials {
+    & h2 {
+        margin-bottom: 2rem;
+        padding-inline: 125px;
+    }
+    & h2 span {
+        color: $RaptureBlue;
+    }
+}
+
+.testimonial {
+    text-align: center;
+    padding: 2rem;
+    flex: 1;
+    & img {
+        border-radius: 50%;
+        border: 2px solid $RaptureBlue;
+        height: 62px;
+        width: 62px;
+    }
+    &__name {
+        font-weight: 700;
+        color: $RaptureBlue;
+        margin-top: 2rem;
+    }
+    &__role {
+        margin-bottom: 2rem;
+    }
+}
+
+//CTA-FOOTER-BAR
+.cta-bar {
+    background-color: $LightCoral;
+    height: 100px;
+    color: $SacramentoStateGreen;
+    & .container {
+        padding-inline: 60px;
+    }
+    & .cta {
+        color: $SacramentoStateGreen;
+        border-color: $SacramentoStateGreen;
+    }
+}

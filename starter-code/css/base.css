@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Livvic";
+  background-color: #004047;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 56px;
+}
+
+h2.small {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+a,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding-block: 5rem;
+}
+
+.text-smallest {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.h-line {
+  width: 60px;
+  height: 2px;
+  margin-bottom: 50px;
+}
+
+.h-line--blue {
+  background-color: #79c8c7;
+}
+
+.h-line--red {
+  background-color: #f67e7e;
+}
+
+.container {
+  height: 100%;
+  max-width: 95%;
+  width: 1200px;
+  margin-inline: auto;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.stretch-self {
+  align-self: stretch;
+}
+
+.padding-inline {
+  padding-inline: 1rem;
+}
+
+h1 span {
+  color: #f67e7e;
+}
+
+.cta {
+  margin-left: auto;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+nav {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+nav .logo {
+  margin-right: 2rem;
+}
+
+nav .link {
+  margin-right: 20px;
+}
+
+header {
+  margin-bottom: 6rem;
+}
+
+header .container {
+  justify-content: space-between;
+}
+
+header h1 {
+  min-width: 50%;
+  max-width: 50%;
+}
+
+header p {
+  width: 450px;
+}
+
+.manage {
+  background-color: #012f34;
+}
+
+.manage .container {
+  justify-content: space-between;
+}
+
+.manage h2 {
+  min-width: 40%;
+  max-width: 40%;
+}
+
+.manage ul {
+  width: 450px;
+}
+
+.testimonials h2 {
+  margin-bottom: 2rem;
+  padding-inline: 125px;
+}
+
+.testimonials h2 span {
+  color: #79c8c7;
+}
+
+.testimonial {
+  text-align: center;
+  padding: 2rem;
+  flex: 1;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  border: 2px solid #79c8c7;
+  height: 62px;
+  width: 62px;
+}
+
+.testimonial__name {
+  font-weight: 700;
+  color: #79c8c7;
+  margin-top: 2rem;
+}
+
+.testimonial__role {
+  margin-bottom: 2rem;
+}
+
+.cta-bar {
+  background-color: #f67e7e;
+  height: 100px;
+  color: #012f34;
+}
+
+.cta-bar .container {
+  padding-inline: 60px;
+}
+
+.cta-bar .cta {
+  color: #012f34;
+  border-color: #012f34;
+}
