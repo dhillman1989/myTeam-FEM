@@ -93,8 +93,8 @@ section {
 //utility classes
 .container {
     height: 100%;
-    max-width: 95%;
-    width: 1200px;
+    max-width: 85%;
+    width: 1100px;
     margin-inline: auto;
 }
 
@@ -156,6 +156,10 @@ h1 span {
     padding: 10px 25px;
     border-radius: 20px;
     border: 1px solid $White;
+    &:hover {
+        background-color: $White;
+        color: $DarkGreen;
+    }
 }
 
 ///Content
@@ -175,10 +179,10 @@ nav .link {
 
 //HEADER
 header {
-    margin-bottom: 6rem;
-    .container {
-        justify-content: space-between;
-    }
+    padding-bottom: 8rem;
+    background-image: url(../assets/bg-pattern-home-1.svg), url(../assets/bg-pattern-home-2.svg);
+    background-repeat: no-repeat;
+    background-position: -120px 0, bottom 0 right 15%;
     & h1 {
         min-width: 50%;
         max-width: 50%;
@@ -191,6 +195,9 @@ header {
 //MANAGE
 .manage {
     background-color: $SacramentoStateGreen;
+    background-image: url(../assets/bg-pattern-home-3.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right -100px;
     .container {
         justify-content: space-between;
     }
@@ -199,12 +206,31 @@ header {
         max-width: 40%;
     }
     & ul {
-        width: 450px;
+        max-width: 520px;
+    }
+    & ul li {
+        display: grid;
+        grid-template-areas: "image title" "image text";
+        grid-gap: 0.5rem;
+        margin-bottom: 2rem;
+        padding-right: 2rem;
+    }
+    & ul li img {
+        grid-area: image;
+    }
+    & ul li h3 {
+        grid-area: title;
+    }
+    & ul li span {
+        grid-area: text;
     }
 }
 
 //TESTIMONIALS
 .testimonials {
+    background-image: url(../assets/bg-pattern-home-4-about-3.svg), url(../assets/bg-pattern-home-5.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
     & h2 {
         margin-bottom: 2rem;
         padding-inline: 125px;
@@ -236,14 +262,22 @@ header {
 
 //CTA-FOOTER-BAR
 .cta-bar {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background-color: $LightCoral;
-    height: 100px;
     color: $SacramentoStateGreen;
+    background-image: url(../assets/bg-pattern-home-6-about-5.svg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
     & .container {
-        padding-inline: 60px;
+        padding-inline: 120px;
     }
     & .cta {
-        color: $SacramentoStateGreen;
-        border-color: $SacramentoStateGreen;
+        color: $DeepJungleGreen;
+        border-color: $DeepJungleGreen;
+        &:hover {
+            color: $LightCoral;
+            background-color: $DeepJungleGreen;
+        }
     }
 }
