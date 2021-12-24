@@ -211,7 +211,8 @@ header {
     & ul li {
         display: grid;
         grid-template-areas: "image title" "image text";
-        grid-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+        grid-column-gap: 2rem;
         margin-bottom: 2rem;
         padding-right: 2rem;
     }
@@ -279,5 +280,57 @@ header {
             color: $LightCoral;
             background-color: $DeepJungleGreen;
         }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    header {
+        background-image: none;
+    }
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        & h1,
+        p {
+            max-width: 100%;
+            margin: 1rem auto;
+        }
+        .h-line {
+            display: none;
+        }
+    }
+    .manage .container {
+        background-image: none;
+        flex-direction: column;
+        & .h-line {
+            margin-bottom: 2rem;
+        }
+        & h2.small {
+            font-size: 25px;
+            line-height: 28px;
+            max-width: 80%;
+            margin-bottom: 2rem;
+        }
+        & h3 {
+            color: $LightCoral;
+        }
+    }
+    .testimonials h2.small {
+        font-size: 3px;
+        padding: 1.4rem;
+        line-height: 36px;
+    }
+    .testimonials .flex-row {
+        flex-direction: column;
+    }
+    .cta-bar .container h2 {
+        font-size: 24px;
+    }
+    .cta-bar .container {
+        padding: 30px;
     }
 }
